@@ -1,0 +1,12 @@
+# testing
+test/
+
+# mac OSX
+.DS_Store
+
+# nextflow specific stuff
+.nextflow/
+.nextflow.log*
+.nextflow.history
+work/
+results/
