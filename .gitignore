@@ -1,5 +1,6 @@
 # testing
 test/
+data/
 
 # mac OSX
 .DS_Store
