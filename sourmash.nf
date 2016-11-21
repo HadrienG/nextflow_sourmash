@@ -26,11 +26,11 @@ process quality_trimming {
         file fastq from adapt_trimmed
 
     output:
-        file "*.trimmed" into trimmed
+        file "*" into trimmed
 
     script:
         """
-        sickle se -f $fastq -t sanger -o "${fastq.baseName}.trimmed" -q 20
+        sickle se -f $fastq -t sanger -o "${fastq.baseName}" -q 20
         """
 }
 
@@ -73,6 +73,6 @@ process sourmash_plot {
 
     script:
         """
-        sourmash plot cmp --pdf
+        sourmash plot cmp --labels
         """
 }
